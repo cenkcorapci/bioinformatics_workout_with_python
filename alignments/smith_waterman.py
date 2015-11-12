@@ -26,7 +26,7 @@ def water(seq1, seq2):
             if score[i][j] >= max_score:
                 max_i = i
                 max_j = j
-                max_score = score[i][j];
+                max_score = score[i][j]
 
     align1, align2 = '', ''  # initial sequences
 
