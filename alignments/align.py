@@ -1,5 +1,6 @@
 import sys, string
-
+# test with;
+# ACACACTA AGCACACA
 
 # zeros() was origianlly from NumPy.
 # This version is implemented by alevchuk 2011-04-10

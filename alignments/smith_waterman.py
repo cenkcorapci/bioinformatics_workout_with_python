@@ -52,5 +52,5 @@ def water(seq1, seq2):
 
 
 #test------------------------------------------------
-
-water(raw_input(), raw_input())
+seq1, seq2 = raw_input().split(" ")
+water(seq1,seq2)
