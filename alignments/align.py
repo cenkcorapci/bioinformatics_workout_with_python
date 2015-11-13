@@ -1,4 +1,6 @@
 import sys, string
+
+
 # test with;
 # ACACACTA AGCACACA
 # or
@@ -61,8 +63,21 @@ def finalize(align1, align2):
 
     identity = float(identity) / len(align1) * 100
 
-    print 'Identity =', "%3.3f" % identity, 'percent'
-    print 'Score =', score
-    print align1
-    print symbol
-    print align2
+    result= Alignment(identity=identity, score=score, seq1=align1, seq2=align2, symbol=symbol)
+    result.print_results()
+    return result
+
+class Alignment:
+    def __init__(self, identity=0.0, score=0.0, seq1="", seq2="", symbol=""):
+        self.match_score = score
+        self.seq1 = seq1
+        self.seq2 = seq2
+        self.identity = identity
+        self.symbol = symbol
+
+    def print_results(self):
+        print 'Identity =', "%3.3f" % self.identity, 'percent'
+        print 'Score =', self.match_score
+        print self.seq1
+        print self.symbol
+        print self.seq2
