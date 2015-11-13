@@ -1,3 +1,5 @@
+#http://www.biology.wustl.edu/gcg/hmmanalysis.html
+
 from math import ceil
 
 def _getMID(i):  # get state from parameter
